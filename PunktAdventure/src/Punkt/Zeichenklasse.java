@@ -25,8 +25,12 @@ public class Zeichenklasse extends JLabel {
 			g.setColor(Color.black);
 			g.drawString("Ihre Punktzahl: "+ Variablen.score, 50, 70);
 			
-			g.drawImage(Variablen.gras, Variablen.wieseX, Variablen.wieseY, 850, Variablen.height, null);  //Wiese
-			g.drawImage(Variablen.coin, Variablen.coinX, Variablen.coinY, 50, 50, null);  //Wiese
+			if(Variablen.sommer){
+				g.drawImage(Variablen.gras, Variablen.wieseX, Variablen.wieseY, 850, Variablen.height, null);  //Wiese
+			}  
+			else{
+				g.drawImage(Variablen.schnee, Variablen.schneeX, Variablen.schneeY, 850, Variablen.height, null);  //Schnee
+			}
 			
 			g.setColor(Variablen.braun);  //Erde
 			g.fillRect(0, 440, Variablen.width, Variablen.height);
@@ -45,7 +49,10 @@ public class Zeichenklasse extends JLabel {
 			}
 			
 			if(Variablen.coinDa == true){
-					g.drawImage(Variablen.coin, Variablen.coinX +  100, Variablen.coinY, 50, 50, null);		
+				g.drawImage(Variablen.coin, Variablen.coinX, Variablen.coinY, 50, 50, null); 
+				g.drawImage(Variablen.coin, Variablen.coinX +  100, Variablen.coinY, 50, 50, null);		
+				g.drawImage(Variablen.coin, Variablen.coinX +  200, Variablen.coinY, 50, 50, null);	
+				g.drawImage(Variablen.coin, Variablen.coinX +  300, Variablen.coinY, 50, 50, null);	
 			}
 			else{
 					g.drawImage(Variablen.coin, Variablen.coinX +  200, Variablen.coinY, 50, 50, null);		

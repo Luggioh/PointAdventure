@@ -11,10 +11,10 @@ public class Muenzen{
 		muenzen.scheduleAtFixedRate(new TimerTask(){
 			
 			public void run() {		
-				if(Variablen.coinX < - 150){
+				if(Variablen.coinX < - 350){
 					Variablen.coinX = 800;
 				}
-					Variablen.coinX -= 8;
+					Variablen.coinX -= 20;
 					
 		}}, 0, 70);
 	}

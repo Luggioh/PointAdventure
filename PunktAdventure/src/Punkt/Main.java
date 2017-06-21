@@ -8,6 +8,7 @@ public class Main {
 		new Variablen();
 		new Grasmove();
 		new HimmelMove();
+		//new WinterMove();
 		new Muenzen();
 		//new HimmelMove();
 		//new Movement();

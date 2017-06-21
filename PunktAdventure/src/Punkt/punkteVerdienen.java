@@ -17,7 +17,7 @@ public class punkteVerdienen {
 							Variablen.score++; ;
 							Variablen.coinDa = false;
 							}
-				}}, 10, 100);
+				}}, 0, 10);
 		}
 
 	}

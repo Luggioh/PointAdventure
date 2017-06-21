@@ -18,7 +18,8 @@ public class Variablen {
 	static Zeichenklasse jlab1;
 	static boolean coinDa = true;
 	static int wieseX= 0, wieseY = 410;
-	static boolean graas = true;
+	static int schneeX= 0, schneeY = 410;
+	static boolean sommer = true;
 	static int muenzY = 0;
 	static int himmelX = 0, himmelY = 0;
 	static int muenzX = 250;
@@ -27,6 +28,7 @@ public class Variablen {
 	static BufferedImage i1;
 	static BufferedImage i2;
 	static BufferedImage matsch;
+	static BufferedImage schnee;
 	static BufferedImage gras;
 	static BufferedImage fla1;
 	static BufferedImage fla2;
@@ -59,6 +61,7 @@ public class Variablen {
 			Variablen.i1 = ImageIO.read(new File("res/pantheon.png"));
 			Variablen.fla1 = ImageIO.read(new File("res/fla1.gif"));
 			Variablen.fla2 = ImageIO.read(new File("res/fla2.gif"));
+			Variablen.schnee = ImageIO.read(new File("res/bg_snow.jpg"));
 			Variablen.coin = ImageIO.read(new File("res/coin.gif"));
 			Variablen.gras = ImageIO.read(new File("res/grasHell.jpg"));
 		} catch (IOException e) {}
