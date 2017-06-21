@@ -41,7 +41,7 @@ public class Variablen {
 	static boolean balkenDa = true;
 	static boolean notGameOver = true;
 	static boolean imSpiel;
-	static int coinX = 200, coinY= 300;
+	static int coinX = 900, coinY= 300;
 	static boolean ran = true;
 	
 	public static void setPunktX(int i){

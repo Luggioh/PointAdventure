@@ -7,6 +7,8 @@ public class Main {
 		new Gui();
 		new Variablen();
 		new Grasmove();
+		new HimmelMove();
+		new Muenzen();
 		//new HimmelMove();
 		//new Movement();
 		//new Muenzen();

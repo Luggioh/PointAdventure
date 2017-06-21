@@ -20,19 +20,13 @@ public class Zeichenklasse extends JLabel {
 			if(Variablen.isRunning == true && Variablen.notGameOver == true){
 
 			g.setColor(Color.CYAN);  //Himmel
-			g.fillRect(Variablen.himmelX, Variablen.himmelY, Variablen.width, Variablen.height);
+			g.fillRect(Variablen.himmelX, Variablen.himmelY, 850, Variablen.height);
 			
 			g.setColor(Color.black);
 			g.drawString("Ihre Punktzahl: "+ Variablen.score, 50, 70);
 			
-			g.setColor(Variablen.gruen);  //Wiese über Erde
-			
-			if(Variablen.graas == true){
-				g.drawImage(Variablen.gras, Variablen.wieseX, Variablen.wieseY, 820, Variablen.height, null);
-			}
-			else{
-				g.drawImage(Variablen.gras, Variablen.wieseX, Variablen.wieseY, 920, Variablen.height, null);
-			}
+			g.drawImage(Variablen.gras, Variablen.wieseX, Variablen.wieseY, 850, Variablen.height, null);  //Wiese
+			g.drawImage(Variablen.coin, Variablen.coinX, Variablen.coinY, 50, 50, null);  //Wiese
 			
 			g.setColor(Variablen.braun);  //Erde
 			g.fillRect(0, 440, Variablen.width, Variablen.height);
